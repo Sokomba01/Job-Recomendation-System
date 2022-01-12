@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %} Recommendation {% endblock title %}
+
+{% block body %}
+
+<div class="container">
+	<div class="row">
+			<div class="col-md-12 margin">
+				{% for d1 in data %}
+				{{d1.1}}<br>
+				{% endfor %}
+				{% for d2 in i1 %}
+				{{d2}}<br>
+				{% endfor %}
+				
+			
+		</div>
+		<!-- <div class="col-md-4 margin">
+			{{talha1}}
+		</div> -->
+
+
+
+	</div>
+	<form method="post" action="/getRecomend/">
+        <input type="submit" value="Get Recommendation" class="btn btn-success">
+
+	<div><h3>
+		Matched Jobs
+	</h3>
+	</div>
+	<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Job Title</th>
+      <th scope="col">Location</th>
+      <th scope="col">Salary</th>
+        <th scope="col">Experience Required</th>
+        <th scope="col">Job Url</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for match in matched %}
+    <tr>
+      <td>{{match.JobTitle}}</td>
+      <td>{{match.Location}}</td>
+      <td>{{match.Salary}}</td>
+        <td>{{match.experienceRequired}}</td>
+        <td>{{match.JobUrl}}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+	<div><h3>
+		Friends With Same Skill
+	</h3>
+	</div>
+	<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">First Name</th>
+      <th scope="col">Job</th>
+      <th scope="col">Experience</th>
+        <th scope="col">Address</th>
+        <th scope="col">Company Location</th>
+        <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for friend in matchedFriend %}
+    <tr>
+      <td>{{friend.firstname}}</td>
+      <td>{{friend.skill}}</td>
+      <td>{{friend.experience}}</td>
+        <td>{{friend.address}}</td>
+        <td>{{friend.companylocation}}</td>
+        <td><a class="btn btn-success px-5 py-3" href="{% url 'myown' receiver=friend.email %}">Send Message</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+    </form>
+</di>
+
+
+
+{% endblock %}

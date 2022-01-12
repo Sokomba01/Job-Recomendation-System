@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %} blog{% endblock title %}
+
+{% block body %}
+<div class="container">
+	<div class="row">
+	<div class="mt-5">
+	<h1 class="mb-5 mt-5">Choose Template...</h1>
+</div></div>
+<div class="row">
+	<div class="col-md-6 offset-md-3">
+		<form action="http://127.0.0.1:8000/chosentemp/" method="POST">
+			<select class="form-control" name="select" required="">
+				<option value="" selected>---------</option>
+				<option value="Designtemp1">Design Template 01</option>
+				<option value="Designtemp2">Design Template 02</option>
+				<option value="Designtemp3">Design Template 03</option>
+				<option value="SimpleResume"> Simple Resume</option>
+				<option value="ResumeViking">Resume Viking</option>
+			</select>
+			<div class="text-right">
+			<input type="submit" value="submit" class="btn btn-success mt-3 px-3">
+		</div>
+		</form>
+	</div>
+</div>
+	<div class="row mt-5">
+		<div class="col-md-4">
+			<h2 class="mb-3">Design Template 01</h2>
+			<div class="card text-white border-success">
+		  <img src="/media/talha/img.png" height="490" alt="Responsive image">
+		</div>
+		</div>
+		<div class="col-md-4">
+			<h2 class="mb-3">Design Template 02</h2>
+			<div class="card text-white border-success">
+  <img src="/media/talha/Designtemp1.jpeg" height="490" alt="Responsive image">
+</div>
+		</div>
+		<div class="col-md-4">
+			<h2 class="mb-3">Design Template 03</h2>
+			<div class="card text-white border-success">
+  <img src="/media/talha/Designtemp2.jpeg" alt="Responsive image">
+</div>
+		</div>
+	</div>
+	<div class="row mb-5 mt-5">
+		<div class="col-md-5 offset-md-1">
+			<h2 class="mb-3">SimpleResume</h2>
+			<div class="card text-white border-success">
+  <img src="/media/talha/coolfree.jpeg" height="660" alt="Responsive image">
+</div>
+		</div>
+		<div class="col-md-5">
+			<h2 class="mb-3">Resume Viking</h2>
+			<div class="card text-white border-success">
+  <img src="/media/talha/resumeviking.jpeg"  alt="Responsive image">
+</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

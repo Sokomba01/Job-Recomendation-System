@@ -1,0 +1,153 @@
+
+ 
+Address, City, ST ZIP Code
+ 
+|
+ 
+Telephone
+ 
+|
+ 
+Email
+ 
+Objective
+ 
+To get started right away, just 
+click
+ 
+any placeholder text (such as this) and start typing to replace it with 
+your own.
+ 
+Education
+ 
+DEGREE
+ 
+|
+ 
+DATE EARNED
+ 
+|
+ 
+SCHOOL
+ 
+·
+ 
+Major: 
+Click
+ 
+here to enter text
+ 
+·
+ 
+Minor: 
+Click here to enter text
+ 
+·
+ 
+Related coursework: 
+Click here to enter text
+ 
+DEGREE
+ 
+|
+ 
+DATE EARNED
+ 
+|
+ 
+SCHOOL
+ 
+·
+ 
+Major: 
+Click
+ 
+here to enter text
+ 
+·
+ 
+Minor: 
+Click here to enter text
+ 
+·
+ 
+Related coursework: 
+Click here to enter text
+ 
+Skills & Abilities
+ 
+MANAGEMENT
+ 
+·
+ 
+Think a document that looks this good has to be difficult to format? Think agai
+n! To easily apply any 
+text formatting you see in this document with just a 
+click
+, on the Home tab of the ribbon, check out 
+Styles.
+ 
+SALES
+ 
+·
+ 
+Some of the sample text in this document indicates the name of the style applied, so that you can easily 
+apply the
+ 
+same formatting again. For example, this is the List Bullet style.
+ 
+COMMUNICATION
+ 
+·
+ 
+
+how well you work and play with others.
+ 
+LEADERSHIP
+ 
+·
+ 
+Are you 
+president of your fraternity, head of the condo board, or a team lead for your favorite charity? 
+
+
+tell it like it is!
+ 
+Experience
+ 
+JOB TITLE
+ 
+|
+ 
+COMPANY
+ 
+|
+ 
+DATES FROM 
+-
+ 
+TO
+ 
+·
+ 
+This is the place for a brief summary of your key 
+responsibilities and most stellar accomplishments.
+ 
+JOB TITLE
+ 
+|
+ 
+COMPANY
+ 
+|
+ 
+DATES FROM 
+-
+ 
+TO
+ 
+·
+ 
+This is the place for a brief summary of your key responsibilities and most stellar accomplishments.
+ 
+

@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %} Recommendation {% endblock title %}
+
+{% block body %}
+<di class="container">
+    <div class="row">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a class="btn btn-success m-5 pb-5" href="{% url 'frndrequests' %}"> See All Friends Rquests </a>
+        </div>
+        <div class="col-md-6">
+            <a class="btn btn-success m-5 pb-5" href="{% url 'frnds' %}"> See All Friends</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">{{errMsg}}</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for frndReq in frdrequests %}
+                    <tr>
+                        <td>{{frndReq.senderFriend}}</td>
+                        <td><a class="btn btn-success" href="{% url 'acceptReq' receiver=frndReq.senderFriend %}"> Accept Request</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for frnd in frnds %}
+                    <tr>
+                        <td>{{frnd.frnd}}</td>
+                        <td><a class="btn btn-success" href="{% url 'GoToSendMsg' receiver=frnd.frnd %}"> Send Message</a></td>
+                        <td style="color: red">{{frnd.no}}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</di>
+
+
+
+{% endblock %}

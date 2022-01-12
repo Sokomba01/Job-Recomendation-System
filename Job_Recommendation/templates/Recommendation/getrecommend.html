@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Recommendation {% endblock title %}
+
+{% block body %}
+<div class="container">
+	<div class="row">
+		<div class="col-md-4 offset-md-3 margin">
+			{% for pr in pros %}
+			<a href="/tfidfs/{{pr.id}}" class="btn btn-success mb-2">Get Recommendation</a>
+			{% endfor %}
+		</div>
+	</div></div>
+
+
+{% endblock %}
